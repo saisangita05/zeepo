@@ -45,21 +45,21 @@ export default function LearnSection() {
     const [activeSkill, setActiveSkill] = useState(skillsTabs[0]);
 
     return (
-        <div style={{ padding: '40px', backgroundColor: '#0b1120', minHeight: '100vh', color: 'white' }}>
+        <div style={{ padding: '40px', backgroundColor: 'white', minHeight: '100vh', color: 'white' }}>
             {/* Learn & Grow Header */}
             <div className="header" style={{ textAlign: 'center', marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: '#3b82f6' }}>
+                <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'blue' }}>
                     <GraduationCap size={32} style={{ verticalAlign: 'middle', marginRight: '8px' }} />
                     Learn & Grow
                 </h2>
-                <p style={{ color: '#d1d5db', maxWidth: '600px', margin: '10px auto' }}>
+                <p style={{ color: 'black', maxWidth: '600px', margin: '10px auto' }}>
                     Build your skills with real-world courses, taught by experts. Gain confidence and start working on live projects.
                 </p>
             </div>
 
             {/* Trending Courses */}
             <div className="trending" style={{ marginBottom: '30px' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', color: '#e5e7eb' }}>Trending</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', color: 'black' }}>Trending</h3>
                 <div style={{ display: 'flex', overflowX: 'auto', gap: '12px', marginBottom: '16px' }}>
                     {trendingTabs.map((topic, idx) => (
                         <div
@@ -107,7 +107,7 @@ export default function LearnSection() {
 
             {/* Skills Section */}
             <div style={{ marginBottom: '40px' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', color: '#e5e7eb' }}>Skills</h3>
+                <h3 style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', color: 'black' }}>Skills</h3>
                 <div style={{ display: 'flex', overflowX: 'auto', gap: '12px', marginBottom: '16px' }}>
                     {skillsTabs.map((skill, idx) => (
                         <div
@@ -115,8 +115,8 @@ export default function LearnSection() {
                             onClick={() => setActiveSkill(skill)}
                             style={{
                                 minWidth: '180px',
-                                backgroundColor: activeSkill === skill ? '#059669' : '#ecfdf5',
-                                color: activeSkill === skill ? '#fff' : '#059669',
+                                backgroundColor: activeSkill === skill ? '#2563eb' : '#f0f9ff',
+                                color: activeSkill === skill ? '#fff' : '#1D4ED8',
                                 padding: '10px 16px',
                                 borderRadius: '6px',
                                 fontSize: '16px',
@@ -139,7 +139,7 @@ export default function LearnSection() {
                             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)'
                         }}>
                             <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '10px' }}>
-                                <BookOpen style={{ verticalAlign: 'middle', marginRight: '6px', color: '#1D4ED8' }} />
+                                <BookOpen style={{ verticalAlign: 'middle', marginRight: '6px', color: 'blue' }} />
                                 {course.title}
                             </h3>
                             <p style={{ color: '#444', marginBottom: '10px' }}>{course.description}</p>
@@ -155,12 +155,12 @@ export default function LearnSection() {
 
             {/* Project Completion Section */}
             <div style={{ marginBottom: '30px' }}>
-                <h3 style={{ fontSize: '20px', fontWeight: '600' }}>Project Completion</h3>
+                <h3 style={{ fontSize: '20px', fontWeight: '600' ,color:'black'}}>Project Completion</h3>
                 <div style={{ display: 'flex', gap: '12px', marginTop: '10px' }}>
                     {['Complete Now', 'In Review', 'Completed'].map((status, i) => (
                         <button key={i} style={{
                             backgroundColor: '#d1d5db',
-                            color: '#000',
+                            color: 'black',
                             padding: '10px 16px',
                             borderRadius: '10px',
                             border: 'none',
@@ -196,7 +196,7 @@ export default function LearnSection() {
 
             {/* Ongoing Courses */}
             <div style={{ marginBottom: '40px' }}>
-                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '10px' }}>Ongoing courses</h3>
+                <h3 style={{ fontSize: '20px', fontWeight: '600', marginBottom: '10px',color:'black' }}>Ongoing courses</h3>
                 <div style={{ display: 'flex', gap: '24px' }}>
                     <div style={{ width: '180px', height: '120px', backgroundColor: '#d1d5db', borderRadius: '8px' }} />
                     <div style={{ width: '180px', height: '120px', backgroundColor: '#d1d5db', borderRadius: '8px' }} />
@@ -210,7 +210,7 @@ export default function LearnSection() {
                     Want to share your knowledge? Become an instructor and earn.
                 </p>
                 <button style={{
-                    backgroundColor: '#16a34a',
+                    backgroundColor: 'blue',
                     color: '#fff',
                     padding: '10px 20px',
                     border: 'none',
