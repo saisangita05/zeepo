@@ -4,12 +4,14 @@ import LearnSection from './components/learn/learn1.jsx';
 import Dashboard from './components/dashboard.jsx';
 import AboutUs from './components/aboutus.jsx';
 import FAQ from './components/faq.jsx';
+import CourseDetails from './components/coursedetails.jsx';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/learn" element={<LearnSection />} />
+      <Route path="/course-details" element={<CourseDetails />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />
