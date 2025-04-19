@@ -45,7 +45,7 @@ const Navbar = () => {
                     { name: 'DashBoard', href: '/dashboard' },
                     { name: 'About Us', href: '/about' },
                     { name: 'FAQ', href: '/faq' },
-                    { name: 'Login/SignUp', href: '#' },
+                    { name: 'Login/SignUp', href: '/signup' },
                 ].map((link, idx) => (
                     <li key={idx}>
                         <a

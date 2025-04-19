@@ -37,7 +37,7 @@ export default function CourseDetails() {
 
     return (
         <div style={{
-            backgroundColor: '#f9fafb',
+            backgroundColor: 'rgba(249, 250, 251, 0)',
             minHeight: '100vh',
             padding: '40px 20px',
             fontFamily: 'Arial, sans-serif',

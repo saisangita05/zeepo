@@ -6,7 +6,9 @@ import AboutUs from './components/aboutus.jsx';
 import FAQ from './components/faq.jsx';
 import CourseDetails from './components/coursedetails.jsx';
 import PaymentPage from './components/Paymentpage.jsx';
-
+import SignUpPage from './components/signup/signup.jsx';
+import LoginPage from './components/login/login.jsx';
+import ResetPassword from './components/resetPass/resetPass.jsx';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />
+      <Route path="/signup" element={<SignUpPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
     </Routes>
   );
 }
