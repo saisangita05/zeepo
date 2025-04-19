@@ -5,6 +5,8 @@ import Dashboard from './components/dashboard.jsx';
 import AboutUs from './components/aboutus.jsx';
 import FAQ from './components/faq.jsx';
 import CourseDetails from './components/coursedetails.jsx';
+import PaymentPage from './components/Paymentpage.jsx';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/learn" element={<LearnSection />} />
       <Route path="/course-details" element={<CourseDetails />} />
+      <Route path="/payment" element={<PaymentPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />

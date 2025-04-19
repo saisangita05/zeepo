@@ -1,11 +1,13 @@
 // src/components/CourseDetails.jsx
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { BadgeCheck, Star, Clock, Layers } from 'lucide-react';
-
+import { useLocation, useNavigate } from 'react-router-dom';
+import { BadgeCheck, Clock, Layers } from 'lucide-react';
+import PaymentPage from './Paymentpage';
 
 export default function CourseDetails() {
     const location = useLocation();
+    const navigate = useNavigate();
+
     const {
         title,
         description,
@@ -19,8 +21,21 @@ export default function CourseDetails() {
         ],
     } = location.state || {};
 
+    const handleEnroll = () => {
+        navigate('/payment', {
+          state: {
+            title,
+            description,
+            level,
+            duration,
+            price,
+            benefits,
+          },
+        });
+      };
+      
+
     return (
-        
         <div style={{
             backgroundColor: '#f9fafb',
             minHeight: '100vh',
@@ -76,17 +91,20 @@ export default function CourseDetails() {
                     ))}
                 </ul>
 
-                <button style={{
-                    backgroundColor: '#1D4ED8',
-                    color: '#fff',
-                    padding: '12px 24px',
-                    fontSize: '16px',
-                    fontWeight: '500',
-                    border: 'none',
-                    borderRadius: '8px',
-                    cursor: 'pointer',
-                    transition: 'background-color 0.2s',
-                }}>
+                <button
+                    onClick={handleEnroll}
+                    style={{
+                        backgroundColor: '#1D4ED8',
+                        color: '#fff',
+                        padding: '12px 24px',
+                        fontSize: '16px',
+                        fontWeight: '500',
+                        border: 'none',
+                        borderRadius: '8px',
+                        cursor: 'pointer',
+                        transition: 'background-color 0.2s',
+                    }}
+                >
                     Enroll Now
                 </button>
             </div>

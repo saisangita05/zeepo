@@ -80,9 +80,10 @@ const AboutUs = () => {
                     >
                         {[
                             { name: "Sai Sanguta Adhek", role: "Frontend Developer" },
-                            { name: "Tanisha Kar", role: "UI/UX Designer" },
-                            { name: "Arpit Ku Nayak", role: "Backend Developer" },
-                            { name: "Your Name", role: "Team Lead / Full Stack Dev" },
+                            { name: "Alok Raj Mahto", role: "UI/UX Designer" },
+                            { name: "Khusi Murarka", role: "Backend Developer" },
+                            { name: "Kuldeep Naik", role: "Team Lead / Full Stack Dev" },
+                            { name: "Priyanshu Ranjan", role: "Team Lead / Full Stack Dev" },
                         ].map((member, index) => (
                             <div
                                 key={index}

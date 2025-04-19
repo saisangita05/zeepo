@@ -25,6 +25,52 @@ const Home = () => {
           </div>
         </div>
       </main>
+
+      {/* Zeepo Information Section */}
+      <section className="zeepo-info">
+        <div className="zeepo-section">
+          <h2>What Zeepo Provides</h2>
+          <ul>
+            <li>📚 Skill-based Learning Modules</li>
+            <li>🎓 Verified Certifications</li>
+            <li>💼 Career-oriented Projects</li>
+            <li>🌐 Community Support</li>
+          </ul>
+        </div>
+
+        <div className="zeepo-section">
+          <h2>How Zeepo Works</h2>
+          <ol>
+            <li> Sign Up and choose your learning path</li>
+            <li>Access curated modules & live sessions</li>
+            <li> Complete tasks to earn points and badges</li>
+            <li> Get certified and job-ready!</li>
+          </ol>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="footer">
+        <div className="footer-section">
+          <h4>Certifications</h4>
+          <p>AWS | Microsoft | Six Sigma | Google | Tableau</p>
+        </div>
+        <div className="footer-section">
+          <h4>Skills</h4>
+          <p>Web Dev | Data Science | AI | SQL |</p>
+        </div>
+        <div className="footer-section">
+          <h4>Zeepo</h4>
+          <p>About Us | Careers | Contact | Blog</p>
+        </div>
+        <div className="footer-section">
+          <h4>Support</h4>
+          <p>Help Center | FAQs | Accessibility</p>
+        </div>
+        <div className="footer-bottom">
+          <p>© 2025 Zeepo, Inc.</p>
+        </div>
+      </footer>
     </div>
   );
 };
